@@ -7,35 +7,78 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-        <div class="hero min-h-screen bg-base-200">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-              <div class="text-center lg:text-left">
-                <h1 class="text-5xl font-bold">Login yourspace!</h1>
-                <p class="py-6">Personalized experience</p>
-              </div>
-              <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                <div class="card-body">
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text">Email</span>
-                    </label>
-                    <input type="text" placeholder="email" class="input input-bordered" />
-                  </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text">Password</span>
-                    </label>
-                    <input type="text" placeholder="password" class="input input-bordered" />
-                    <label class="label">
-                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                    </label>
-                  </div>
-                  <div class="form-control mt-6">
-                    <button class="btn btn-primary">Login</button>
-                  </div>
+
+
+        <!--first section-->
+        <div class="flex w-full bg-base-100 shadow-xl">
+            <div class="flex">
+                
+                <figure class="avatar online m-2">
+                   <!-- avatar -->
+                        <div class="rounded-full w-24 h-24">
+                        <img src="http://daisyui.com/tailwind-css-component-profile-1@94w.png" alt="Profile image">
+                        </div>
+                </figure>
+
+                <h2 class="card-title">Your profile!</h2>
+                <div class="card card-actions justify-end">
+                <button class="btn btn-primary">Edit</button>
                 </div>
-              </div>
+
             </div>
-          </div>
+        </div>
+
+
+
+        <!--second section-->
+        <div class="form-control">
+            <label class="label">
+                <span class="label-text">Name</span>
+            </label>
+            <input type="text" placeholder="Admin" class="input input-bordered" />
+        </div>
+        <div class="form-control">
+            <label class="label">
+            <span class="label-text">Email</span>
+            </label>
+            <input type="text" placeholder="admin@aquarium.com" class="input input-bordered" />
+        </div>
+        <div class="form-control">
+            <label class="label">
+                <span class="label-text">Your Location</span>
+            </label>
+            <input type="text" placeholder="Boston" class="input input-bordered" />
+        </div>
+        <div class="form-control">
+            <label class="label">
+                <span class="label-text">Phone Number</span>
+            </label>
+            <input type="text" placeholder="(123) 456-7890" class="input input-bordered" />
+        </div>
+    
+
+      <!--third section-->
+            <div class="form-control">
+                <label class="label">
+                <span class="label-text">Current password</span>
+                </label>
+                <input type="text" placeholder="Current password" class="input input-bordered" />
+            </div>
+            <div class="form-control">
+                <label class="label">
+                <span class="label-text">New password</span>
+                </label>
+                <input type="text" placeholder="New password" class="input input-bordered" />
+            </div>
+            <div class="form-control">
+                <label class="label">
+                <span class="label-text">Confirm new password</span>
+                </label>
+                <input type="text" placeholder="Confirm new password" class="input input-bordered" />
+            </div>
+
+
+
+
     </body>
 </html>
