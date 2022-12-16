@@ -8,15 +8,14 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             function sideNav() {
-                //make side nav invisible
-                //document.getElementById('sideNav').style.visibility = "hidden";
-                //document.getElementById('sideNav').classList.remove('md:visible md:w-56');
-
-                //sign out - and - 
+                //sign out - and - makehamburger invisible
                 
                 //hide side nav - and - 
                 document.getElementById('sideNav').classList.remove('md:visible');
                 document.getElementById('sideNav').classList.remove('md:w-56');
+                //hide side nav in desktop
+                document.getElementById('bigNav').classList.add('md:invisible');
+                //document.getElementById('sideNav').classList.add('md:w-0');
                 //header hamburger button
                 document.getElementById('hamburger').classList.add('invisible');
                 //document.getElementById('hamburger').classList.toggle('md:w-56');
@@ -36,11 +35,14 @@
                 document.getElementById('smallNav').classList.toggle('md:w-16');
                 document.getElementById('sideNav').classList.toggle('md:w-16');
 
-                //if viewport is mobile less tham md then do {}
+                //if viewport is mobile less than md then do {}
 
                 //in mobile view make sideNav visible - and - bigNav invisible - and - smallNav visible
                 document.getElementById('sideNav').classList.toggle('invisible');
                 document.getElementById('bigNav').classList.toggle('h-0');
+                document.getElementById('sideNav').classList.toggle('w-16');
+                document.getElementById('sideNav').classList.toggle('');
+                document.getElementById('sideNav').classList.toggle('');
 
 
             }
