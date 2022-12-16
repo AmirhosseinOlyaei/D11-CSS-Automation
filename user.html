@@ -17,7 +17,8 @@
                 <figure class="avatar online m-2">
                    <!-- avatar -->
                         <div class="rounded-full w-24 h-24">
-                        <img src="http://daisyui.com/tailwind-css-component-profile-1@94w.png" alt="Profile image">
+                        <img src="https://source.unsplash.com/random" alt="Profile image">
+                        <!--http://daisyui.com/tailwind-css-component-profile-1@94w.png-->
                         </div>
                 </figure>
 
@@ -30,45 +31,49 @@
         <div class="shadow-xl m-2 bg-base-100">
 
             <p class="card-title">Basic Info</p>
-
-            <div class="form-control">
-                <label class="label">
-                    <span class="label-text">Name</span>
-                </label>
-                <input type="text" placeholder="Admin" class="input input-bordered" />
-            </div>
-            <div class="form-control">
-                <label class="label">
-                <span class="label-text">Email</span>
-                </label>
-                <input type="text" placeholder="admin@aquarium.com" class="input input-bordered" />
-            </div>
-            <div class="form-control">
-                <label class="label">
-                    <span class="label-text">Your Location</span>
-                </label>
-                <input type="text" placeholder="Boston" class="input input-bordered" />
-            </div>
-            <div class="form-control">
-                <label class="label">
-                    <span class="label-text">Phone Number</span>
-                </label>
-                <input type="text" placeholder="(123) 456-7890" class="input input-bordered" />
-            </div>
-
+                <div class="">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Name</span>
+                        </label>
+                        <input type="text" placeholder="Admin" class="input input-bordered" />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                        <span class="label-text">Email</span>
+                        </label>
+                        <input type="text" placeholder="admin@aquarium.com" class="input input-bordered" />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Your Location</span>
+                        </label>
+                        <input type="text" placeholder="Boston" class="input input-bordered" />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Phone Number</span>
+                        </label>
+                        <input type="tel" placeholder="(123) 456-7890" class="input input-bordered" />
+                    </div>
+                    <div class="grid m-4">
+                        <button class="btn btn-form">
+                            Save
+                        </button>
+                    </div>
+                </div>
         </div>
-    
 
-      <!--third section-->
-      <div class="shadow-xl m-2 bg-base-100">
+        <!--third section-->
+        <div class="shadow-xl m-2 bg-base-100">
 
-        <p class="card-title">Change Password</p>
+            <p class="card-title">Change Password</p>
 
             <div class="form-control">
                 <label class="label">
                 <span class="label-text">Current password</span>
                 </label>
-                <input type="text" placeholder="Current password" class="input input-bordered" />
+                <input type="password" placeholder="Current password" class="input input-bordered" />
             </div>
             <div class="form-control">
                 <label class="label">
@@ -82,7 +87,14 @@
                 </label>
                 <input type="text" placeholder="Confirm new password" class="input input-bordered" />
             </div>
-<br>
+            <div class="grid m-4">
+                <button class="btn btn-form">
+                    Update Password
+                </button>
+            </div>
+            
+            <br>
+
             <p class="card-title text-gray-400">Password Requirement</p>
             <span class="text-s text-gray-500">Please follow this guide for a strong password:</span>
             <ul class="text-xs text-gray-600">
