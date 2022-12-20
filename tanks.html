@@ -20,104 +20,93 @@
     <body>
         <div class="grid place-items-center">
 
-        <div class="w-96 carousel m-5">
-        <div id="item1" class="carousel-item w-full">
-        <img src="https://media.istockphoto.com/id/671796532/photo/underwater-scene-with-reef-and-tropical-fish.jpg?b=1&s=170667a&w=0&k=20&c=l7oLmplZex9LiGuNEVg-gYo--H2ST8yowG_c-rK7xHo=" class="h-48 w-full object-cover" />
-        </div> 
-        <div id="item2" class="carousel-item">
-        <img src="https://media.cmsmax.com/pyg2bhwsdu01ky1odnkcg/fish-background-placeholder-img.png" class="h-48 w-96 object-cover" />
-        </div> 
-        <div id="item3" class="carousel-item">
-        <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701593067.jpg" class="h-48 w-96 object-cover" />
-        </div> 
-        <div id="item4" class="carousel-item">
-        <img src="https://i.pinimg.com/originals/6f/e6/c2/6fe6c2983f5c5ed32a3948be50d6a26c.jpg" class="h-48 w-96 object-cover" />
-        </div>
-        </div> 
-        <div class="flex justify-center w-full py-2 gap-2">
-        <a href="#item1" class="btn btn-s">1</a> 
-        <a href="#item2" class="btn btn-s">2</a> 
-        <a href="#item3" class="btn btn-s">3</a> 
-        <a href="#item4" class="btn btn-s">4</a>
-        </div>
-        
+            <div class="w-96 carousel m-5">
+                <div id="item1" class="carousel-item w-full">
+                    <img src="https://media.istockphoto.com/id/671796532/photo/underwater-scene-with-reef-and-tropical-fish.jpg?b=1&s=170667a&w=0&k=20&c=l7oLmplZex9LiGuNEVg-gYo--H2ST8yowG_c-rK7xHo=" class="h-48 w-full object-cover" />
+                </div> 
+                <div id="item2" class="carousel-item">
+                    <img src="https://media.cmsmax.com/pyg2bhwsdu01ky1odnkcg/fish-background-placeholder-img.png" class="h-48 w-96 object-cover" />
+                </div> 
+                <div id="item3" class="carousel-item">
+                    <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701593067.jpg" class="h-48 w-96 object-cover" />
+                </div> 
+                <div id="item4" class="carousel-item">
+                    <img src="https://i.pinimg.com/originals/6f/e6/c2/6fe6c2983f5c5ed32a3948be50d6a26c.jpg" class="h-48 w-96 object-cover" />
+                </div>
+            </div> 
+
+            <div class="flex justify-center w-full py-2 gap-2">
+                <a href="#item1" class="btn btn-s" onclick="click1()">1</a> 
+                <a href="#item2" class="btn btn-s" onclick="click2()">2</a> 
+                <a href="#item3" class="btn btn-s" onclick="click3()">3</a> 
+                <a href="#item4" class="btn btn-s" onclick="click4()">4</a>
+            </div>
+                <script>
+
+                    function click1() {
+                        //width full - item 11 visible
+                        document.getElementById('item11').classList.remove('hidden');
+                        //hide item 12 [change visibility , hidden , w-zero, index]
+                        document.getElementById('item12').classList.add('hidden');
+                        //hide item 13
+                        document.getElementById('item13').classList.add('hidden');
+                        //hide item 14 
+                        document.getElementById('item14').classList.add('hidden');
+                    }
+
+                    function click2() {
+                        //width full - item 11 visible
+                        document.getElementById('item12').classList.remove('hidden');
+                        //hide item 12 [change visibility , hidden , w-zero, index]
+                        document.getElementById('item11').classList.add('hidden');
+                        //hide item 13
+                        document.getElementById('item13').classList.add('hidden');
+                        document.getElementById('item14').classList.add('hidden');
+                    }
+
+                    function click3() {
+                        //width full - item 11 visible
+                        document.getElementById('item13').classList.remove('hidden');
+                        //hide item 12 [change visibility , hidden , w-zero, index]
+                        document.getElementById('item11').classList.add('hidden');
+                        //hide item 13
+                        document.getElementById('item12').classList.add('hidden');
+                        document.getElementById('item14').classList.add('hidden');
+                    }
+
+                    function click4() {
+                        //width full - item 11 visible
+                        document.getElementById('item14').classList.remove('hidden');
+                        //hide item 12 [change visibility , hidden , w-zero, index]
+                        document.getElementById('item11').classList.add('hidden');
+                        //hide item 13
+                        document.getElementById('item12').classList.add('hidden');
+                        document.getElementById('item13').classList.add('hidden');
+                    }
+
+
+                </script>
+            <div class="w-96 carousel m-5">
+                <div id="item11" class="carousel-item w-full">
+                    <iframe src="chart1.html" name="iframe_charts" title="Charts Iframe" class="w-full h-full"></iframe>
+
+                </div> 
+                <div id="item12" class="carousel-item w-full">
+                    <iframe src="chart2.html" name="iframe_charts" title="Charts Iframe" class="w-full h-full"></iframe>
+                </div> 
+                <div id="item13" class="carousel-item w-full">
+                    <iframe src="chart3.html" name="iframe_charts" title="Charts Iframe" class="w-full h-full"></iframe>
+                </div> 
+                <div id="item14" class="carousel-item w-full">
+                    <iframe src="chart4.html" name="iframe_charts" title="Charts Iframe" class="w-full h-full"></iframe>
+                </div>
+            </div> 
+
         </div>
 
         <!-- average temp for tanks chart-->
         <!--bg-gradient-to-b from-blue-200 to-blue-30-->
         
-        <div id="container"></div>
-      
-    <script>
-        anychart.onDocumentReady(function () {
-    
-            // create data
-            var data = [70];
-            
-            // set the gauge type
-            var gauge = anychart.gauges.thermometer();
-        
-            // set the data for the gauge
-            gauge.data(data);
-        
-            // set the title of the gauge
-            gauge.title('Thermometer with Fahrenheit and Celsius Scales');
-        
-            // add a thermometer pointer
-            gauge.addPointer(0);
-        
-            // use the primary scale a Fahrenheit scale
-            var fScale = gauge.scale();
-        
-            // set the minimum and maximum values of the Fahrenheit scale
-            fScale.minimum(-40);
-            fScale.maximum(122);
-        
-            // set the intervals of major and minor ticks on the Fahrenheit scale
-            fScale.ticks().interval(10);
-            fScale.minorTicks().interval(2);    
-        
-            // add an axis on the left side of the gauge
-            var axisLeft = gauge.axis(0);
-        
-            // configure minor ticks on the left axis
-            axisLeft.minorTicks(true)
-            axisLeft.minorTicks().stroke('#cecece');
-        
-            // set the width of the left axis
-            axisLeft.width('0');
-        
-            // set the offset of the left axis (as a percentage of the gauge width)
-            axisLeft.offset('-0.18%');
-        
-            // bind the left axis to the Fahrenheit scale
-            axisLeft.scale(fScale);
-        
-            // configure a Celsius scale
-            var cScale = anychart.scales.linear();
-            cScale.minimum(-40);
-            cScale.maximum(50);
-            cScale.ticks().interval(10);
-            cScale.minorTicks().interval(1);
-        
-            // configure an axis on the right side of the gauge
-            var axisRight = gauge.axis(1);
-            axisRight.minorTicks(true);
-            axisRight.minorTicks().stroke('#cecece');
-            axisRight.width('0');
-            axisRight.offset('3.15%');
-            axisRight.orientation('right');
-        
-            // bind the right axis to the Celsius scale
-            axisRight.scale(cScale);
-        
-            // set the container id
-            gauge.container('container');
-        
-            // initiate drawing the gauge
-            gauge.draw();
-        });
-    </script>
 
 
 
